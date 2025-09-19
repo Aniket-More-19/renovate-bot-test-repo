@@ -1,0 +1,4 @@
+# Using custom aws profile and region
+# amiFilter=[{"Name":"owner-id","Values":["602401143452"]},{"Name":"name","Values":["amazon-eks-node-1.20-*"]},{"profile":"test","region":"eu-central-1"}]
+# currentImageName=unknown
+ami = "ami-0083e9407e275acf2"
