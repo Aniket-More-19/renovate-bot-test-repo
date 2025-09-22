@@ -5,8 +5,7 @@
       "customType": "regex",
       "managerFilePatterns": ["/.*/"],
       "matchStrings": [
-        "\\s*# amiFilter=(?<depName>.*?)\\n[\\s\\S]*?id:\\s*(?<currentValue>ami-[a-z0-9]{17})",
-        "\\s*# amiFilter=(?<depName>.*?)\\n(?:.*currentImageName=(?<currentDigest>.*?)\\n)?[\\s\\S]*?(?<depKey>[a-zA-Z0-9-_]+)[:=]\\s*[\"']?(?<currentValue>ami-[a-z0-9]{17})[\"']?"
+        "\\s*# amiFilter=(?<depName>.*?)\\n[\\s\\S]*?id:\\s*(?<currentValue>ami-[a-z0-9]{17})"
       ],
       "depNameTemplate": "{{depName}}",
       "datasourceTemplate": "aws-machine-image",
