@@ -7,6 +7,7 @@
       "matchStrings": [
         "\\s*# amiFilter=(?<packageName>.*?)\\n[\\s\\S]*?id:\\s*(?<currentValue>ami-[a-z0-9]{17})"
       ],
+      "depNameTemplate": "{{packageName}}",
       "datasourceTemplate": "aws-machine-image",
       "versioningTemplate": "aws-machine-image"
     }
