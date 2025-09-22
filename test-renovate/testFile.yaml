@@ -1,5 +1,14 @@
-# Using custom aws profile and region
-# amiFilter=[{"Name":"owner-id","Values":["602401143452"]},{"Name":"name","Values":["amazon-eks-node-al2023-x86_64-standard-1.32-*"]},{"region":"eu-west-1"}]
+# # Using custom aws profile and region
+# # amiFilter=[{"Name":"owner-id","Values":["602401143452"]},{"Name":"name","Values":["amazon-eks-node-al2023-x86_64-standard-1.32-*"]},{"region":"eu-west-1"}]
+# # currentImageName=unknown
+# ami = "ami-0083e9407e275acf2"
+# #  "depNameTemplate": "{{depName}}",
+
+# With AMI name mentioned in the comments
+# amiFilter=[{"Name":"owner-id","Values":["602401143452"]},{"Name":"name","Values":["amazon-eks-node-1.21-*"]}]
 # currentImageName=unknown
-ami = "ami-0083e9407e275acf2"
-#  "depNameTemplate": "{{depName}}",
+my_ami1: ami-02ce3d9008cab69cb
+# Only AMI, no name mentioned
+# amiFilter=[{"Name":"owner-id","Values":["602401143452"]},{"Name":"name","Values":["amazon-eks-node-1.20-*"]}]
+# currentImageName=unknown
+my_ami2: ami-0083e9407e275acf2
